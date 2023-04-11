@@ -41,7 +41,7 @@ export default defineComponent({
     const dashboardData = [
       {
         id: 1,
-        label: 'Users',
+        label: 'Vehicles',
         value: 80,
         icon: UserIcon
       },
@@ -53,13 +53,13 @@ export default defineComponent({
       },
       {
         id: 4,
-        label: 'Events',
+        label: 'Maintenance',
         value: 40,
         icon: CalendarIcon
       },
       {
         id: 2,
-        label: 'Products',
+        label: 'Drivers',
         value: 120,
         icon: CubeIcon
       }
