@@ -22,7 +22,7 @@ export default defineConfig({
     open: true,
     proxy: {
       "/api": {
-        target: "https://demo-fleetapi.up.railway.app",
+        target: "https://fleet-fyp.up.railway.app",
         changeOrigin: true,
         pathRewrite: {
           "^/api": "",
