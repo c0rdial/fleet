@@ -9,7 +9,7 @@
         
         <div>
           <span class="block sm:inline"
-            >Copyright &copy; {{ new Date().getFullYear() }} Vehicle |
+            >Copyright &copy; {{ new Date().getFullYear() }} Fleet Management System |
           </span>
           <span class="block sm:inline">
             Crafted with 💖 by

@@ -25,7 +25,7 @@
 import { computed, defineComponent, onMounted, ref } from 'vue'
 import components from '@/partials'
 
-import { UserIcon, CurrencyDollarIcon, CalendarIcon, CubeIcon } from '@heroicons/vue/outline'
+import { UserIcon, CurrencyDollarIcon, ClipboardListIcon, TruckIcon } from '@heroicons/vue/outline'
 import { useStore } from 'vuex'
 import { useRouter } from 'vue-router'
 
@@ -43,7 +43,7 @@ export default defineComponent({
         id: 1,
         label: 'Vehicles',
         value: 80,
-        icon: UserIcon
+        icon: TruckIcon
       },
       {
         id: 3,
@@ -54,14 +54,14 @@ export default defineComponent({
       {
         id: 4,
         label: 'Maintenance',
-        value: 40,
-        icon: CalendarIcon
+        value: 21,
+        icon: ClipboardListIcon
       },
       {
         id: 2,
         label: 'Drivers',
         value: 120,
-        icon: CubeIcon
+        icon: UserIcon
       }
     ]
 
@@ -104,9 +104,9 @@ export default defineComponent({
         width: 380,
         type: 'pie'
       },
-      labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+      labels: ['Vehicle A', 'Vehicle B', 'Vehicle  C', 'Vehicle  D', 'Vehicle E'],
       title: {
-        text: 'Simple Pie Chart'
+        text: 'Vehicle Perfomance'
       },
       responsive: [
         {
