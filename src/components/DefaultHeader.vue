@@ -37,7 +37,7 @@
                   alt=""
                 />
                 <span class="hidden ml-3 text-slate-700 text-sm font-medium lg:block"
-                  ><span class="sr-only">Open user menu for </span>Wan Adam</span
+                  ><span class="sr-only">Open user menu for </span>Kevin Hew</span
                 >
                 <ChevronDownIcon
                   class="hidden flex-shrink-0 ml-1 h-5 w-5 text-gray-400 lg:block"
