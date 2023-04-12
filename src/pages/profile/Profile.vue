@@ -45,7 +45,7 @@
                     <label for="fullname" class="form-label inline-block mr-4 text-gray-900"
                       >Email :
                     </label>
-                    <p class="text-gray-700 font-semibold capitalize">{{ user.email }}</p>
+                    <p class="text-gray-700 font-semibold ">{{ user.email }}</p>
                   </div>
 
                   <div class="form-group flex items-center mb-6">
