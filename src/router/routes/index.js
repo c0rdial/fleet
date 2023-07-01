@@ -44,7 +44,17 @@ const RoleEdit = () =>
 const Profile = () =>
   import(/* webpackChunkName: 'p-profile */ "@/pages/profile/Profile.vue");
 
+const Vehicle = () => 
+    import(/* webpackChunkName: 'p-vehicle */ "@/pages/vehicle/Vehicle.vue");
 
+const VehicleEdit = () => 
+    import(/* webpackChunkName: 'p-vehicle-edit */ "@/pages/vehicle/VehicleEdit.vue");
+
+const VehicleCreate = () => 
+    import(/* webpackChunkName: 'p-vehicle-create */ "@/pages/vehicle/VehicleCreate.vue");  
+
+const VehicleDetail = () =>
+    import(/* webpackChunkName: 'p-vehicle-detail */ "@/pages/vehicle/VehicleDetail.vue");  
 
 const RouterView = () =>
   import(/* webpackChunkName: 'c-router-view */ "@/components/RouterView.vue");
@@ -163,6 +173,50 @@ const profileRoutes = [
   },
 ];
 
+const vehicleRoutes = [
+  {
+    path: '/vehicles',
+    component: RouterView,
+    children: [
+      {
+        path: '',
+        name: 'Vehicles',
+        component: Vehicle,
+        meta: {
+          auth: true,
+          title: 'Vehicles',
+        },
+      },
+      {
+        path: ':id/detail',
+        name: 'VehicleDetail',
+        component: VehicleDetail,
+        meta: {
+          auth: true,
+          title: 'Vehicle Detail',
+        },
+      },
+      {
+        path: 'create',
+        name: 'VehicleCreate',
+        component: VehicleCreate,
+        meta: {
+          auth: true,
+          title: 'Vehicle Create',
+        },
+      },
+      {
+        path: ':id/edit',
+        name: 'VehicleEdit',
+        component: VehicleEdit,
+        meta: {
+          auth: true,
+          title: 'Vehicle Edit',
+        },
+      },
+    ],
+  }
+]
 
 /** @type {import('vue-router').RouterOptions['routes']} */
 export const routes = [
@@ -177,6 +231,7 @@ export const routes = [
       ...userRoutes,
       ...roleRoutes,
       ...profileRoutes,
+      ...vehicleRoutes,
     ],
     // beforeEnter: guardAuth,
   },

@@ -5,6 +5,7 @@ import config from "./modules/config";
 import user from "./modules/user";
 import auth from "./modules/auth";
 import role from "./modules/role";
+import vehicle from "./modules/vehicle";
 
 const debug = process.env.NODE_ENV !== "production";
 
@@ -18,13 +19,10 @@ const modules = {
   config,
   user,
   role,
+  vehicle,
 };
 
 export default createStore({
-//   state: main.state,
-//   mutations: main.mutations,
-  // actions: main.actions,
-//   getters: main.getters,
   modules,
   strict: debug,
   plugins: debug ? [createLogger(), vuexLocal.plugin] : [],

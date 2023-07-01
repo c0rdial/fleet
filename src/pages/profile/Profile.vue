@@ -10,7 +10,7 @@
               <div
                 class="text-base relative inline-flex items-center justify-center rounded-xl text-white p-4 transition-all duration-200"
               >
-                <img class="h-28 w-28 rounded-full" :src="user.avatar" alt="avatar" />
+                <img class="h-28 w-28 rounded-full" src="~/assets/unnamed.png"  alt="avatar" />
               </div>
             </div>
             <div class="flex-none w-auto max-w-full px-3 my-auto">

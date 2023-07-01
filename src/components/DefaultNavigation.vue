@@ -53,6 +53,11 @@ export default defineComponent({
         name: 'Role',
         href: '/roles',
         icon: ShieldExclamationIcon
+      },
+      {
+        name: 'Vehicle',
+        href: '/vehicles',
+        icon: CogIcon
       }
     ]
 
