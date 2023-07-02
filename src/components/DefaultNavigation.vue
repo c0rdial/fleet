@@ -37,6 +37,10 @@ export default defineComponent({
   setup(props) {
     const route = useRoute()
     const router = useRouter()
+    const userLocal = localStorage.getItem('vuex');
+    const user = JSON.parse(userLocal);
+
+    console.log(user.auth.auth.fo);
 
     const navigations = [
       {
@@ -59,6 +63,7 @@ export default defineComponent({
         href: '/vehicles',
         icon: CogIcon
       }
+      
     ]
 
     onMounted(() => {
