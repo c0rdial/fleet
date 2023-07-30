@@ -117,6 +117,7 @@ const actions = {
   async createVehicle({ commit }, data) {
     await api.post(`vehicles`, data)
       .then((response) => {
+        console.log('Response from server:', response);
         Swal.fire({
           title: 'Create Success',
           text:   'Vehicle has been created',
@@ -131,6 +132,7 @@ const actions = {
       }
     )
     .catch((error) => {
+      console.error('Error while creating vehicle:', error);
       Swal.fire({
         title: 'Create Failed',
         text:   error.response.data.message,

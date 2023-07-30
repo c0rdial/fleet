@@ -208,9 +208,9 @@
       const saveLoading = ref(false)
       const date = ref()
   
-      const submit = () => {
+      const submit = async () => {
         saveLoading.value = true
-        store.dispatch('vehicle/createVehicle', {
+        await store.dispatch('vehicle/createVehicle', {
           ...params,
           reqDate: date.value
         })

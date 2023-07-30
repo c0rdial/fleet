@@ -51,6 +51,11 @@ export default {
       /* webpackChunkName: "c-table-row-role" */ "@/components/table-row/TableRowRole.vue"
     ),
   ),
+  TableRowVehicle : defineAsyncComponent(() =>
+    import(
+      /* webpackChunkName: "c-table-row-vehicle" */ "@/components/table-row/TableRowVehicle.vue"
+    ),
+  ),
   CustomInput : defineAsyncComponent(() =>
     import(
       /* webpackChunkName: "c-custom-input" */ "@/components/input/CustomInput.vue"
