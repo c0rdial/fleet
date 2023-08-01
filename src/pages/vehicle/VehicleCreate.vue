@@ -7,7 +7,7 @@
         </div>
         <form @submit.prevent="submit" class="md:max-w-5xl">
           <div class="py-5">
-            <div class="md:grid md:grid-cols-2 gap-10">
+            <!-- <div class="md:grid md:grid-cols-2 gap-10">
               <CustomInput
                 inputType="default"
                 v-model="params.costCenter"
@@ -29,9 +29,9 @@
                 label="Req No"
                 :is-required="true"
               />
-            </div>
+            </div> -->
             <div class="md:grid md:grid-cols-2 gap-10">
-              <CustomInput
+              <!-- <CustomInput
                 inputType="default"
                 v-model="params.class"
                 id="class"
@@ -40,7 +40,7 @@
                 aria-describedby="class"
                 label="Class"
                 :is-required="true"
-              />
+              /> -->
   
               <CustomInput
                 inputType="default"
@@ -66,6 +66,9 @@
                 :is-required="true"
               />
   
+            </div>
+            <div class="md:grid md:grid-cols-2 gap-10">
+
               <CustomInput
                 inputType="default"
                 v-model="params.color"
@@ -79,7 +82,7 @@
             </div>
   
             <div class="md:grid md:grid-cols-2 gap-10">
-              <CustomInput
+              <!-- <CustomInput
                 inputType="default"
                 v-model="params.fuelType"
                 id="fuelType"
@@ -88,7 +91,7 @@
                 aria-describedby="fuelType"
                 label="Fuel Type"
                 :is-required="true"
-              />
+              /> -->
   
               <CustomInput
                 inputType="default"
@@ -114,8 +117,11 @@
                 :is-required="true"
               />
   
+             
+            </div>
+            <div class="md:grid md:grid-cols-2 gap-10">
               <div class="flex flex-col mb-4">
-                <label class="form-label inline-block mb-2 text-slate-700 font-medium"> Role </label>
+                <label class="form-label inline-block mb-2 text-slate-700 font-medium"> Req Date </label>
                 <VueDatePicker
                   v-model="date"
                   :close-on-auto-apply="true"
@@ -127,7 +133,7 @@
   
             <div class="md:grid md:grid-cols-2 gap-10">
               <div class="flex flex-col mb-4">
-                <label class="form-label inline-block mb-2 text-slate-700 font-medium"> Role </label>
+                <label class="form-label inline-block mb-2 text-slate-700 font-medium"> Status </label>
                 <select
                   v-model="params.status"
                   class="form-control block w-full px-3 py-2 text-slate-500 bg-white bg-clip-padding border-none ring-2 ring-gray-300 rounded transition ease-in-out m-0 shadow focus:text-slate-700 focus:bg-slate-200 focus:ring-blue-secondary focus:ring-2 focus:outline-none"

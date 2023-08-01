@@ -66,18 +66,6 @@
           label: 'no'
         },
         {
-          key: 'costCenter',
-          label: 'Cost Center'
-        },
-        {
-          key: 'reqNo',
-          label: 'Req No'
-        },
-        {
-          key: 'class',
-          label: 'Class'
-        },
-        {
           key: 'make',
           label: 'make'
         },
@@ -88,10 +76,6 @@
         {
           key: 'color',
           label: 'color'
-        },
-        {
-          key: 'fuelType',
-          label: 'fuel Type'
         },
         {
           key: 'engineNo',
@@ -168,6 +152,7 @@
               page: params.page,
               limit: params.limit
             })
+            window.location.reload()
           }
         })
       }

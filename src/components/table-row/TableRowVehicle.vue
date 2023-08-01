@@ -1,13 +1,13 @@
 <template>
     <tr class="">
       <td class="px-6 py-4">{{ index + 1 }}</td>
-      <td class="px-6 py-4">{{ item.costCenter }}</td>
+      <!-- <td class="px-6 py-4">{{ item.costCenter }}</td>
       <td class="px-6 py-4">{{ item.reqNo }}</td>
-      <td class="px-6 py-4">{{ item.class }}</td>
+      <td class="px-6 py-4">{{ item.class }}</td> -->
       <td class="px-6 py-4">{{ item.make }}</td>
       <td class="px-6 py-4">{{ item.model }}</td>
       <td class="px-6 py-4">{{ item.color }}</td>
-      <td class="px-6 py-4">{{ item.fuelType }}</td>
+      <!-- <td class="px-6 py-4">{{ item.fuelType }}</td> -->
       <td class="px-6 py-4">{{ item.engineNo }}</td>
       <td class="px-6 py-4">{{ item.manuYear }}</td>
       <td class="px-6 py-4">{{ formatDate(item.reqDate) }}</td>

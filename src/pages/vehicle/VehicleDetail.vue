@@ -8,12 +8,12 @@
             <div class="flex-auto">
               <div class="">
                 <div class="">
-                  <div class="form-group flex items-center mb-6">
+                  <!-- <div class="form-group flex items-center mb-6">
                     <label for="fullname" class="form-label inline-block mr-4 text-gray-900"
                       >Cost center :
                     </label>
                     <p class="text-gray-700 font-semibold capitalize">{{ vehicle.costCenter }}</p>
-                  </div>
+                  </div> -->
   
                   <div class="form-group flex items-center mb-6">
                     <label for="fullname" class="form-label inline-block mr-4 text-gray-900"
@@ -22,24 +22,24 @@
                     <p class="text-gray-700 font-semibold capitalize">{{ vehicle.engineNo }}</p>
                   </div>
   
-                  <div class="form-group flex items-center mb-6">
+                  <!-- <div class="form-group flex items-center mb-6">
                     <label for="fullname" class="form-label inline-block mr-4 text-gray-900"
                       >Fuel type :
                     </label>
                     <p class="text-gray-700 font-semibold capitalize">{{ vehicle.fuelType }}</p>
-                  </div>
-                  <div class="form-group flex items-center mb-6">
+                  </div> -->
+                  <!-- <div class="form-group flex items-center mb-6">
                     <label for="fullname" class="form-label inline-block mr-4 text-gray-900"
                       >Class :
                     </label>
                     <p class="text-gray-700 font-semibold capitalize">{{ vehicle.class }}</p>
-                  </div>
-                  <div class="form-group flex items-center mb-6">
+                  </div> -->
+                  <!-- <div class="form-group flex items-center mb-6">
                     <label for="fullname" class="form-label inline-block mr-4 text-gray-900"
                       >Fuel type :
                     </label>
                     <p class="text-gray-700 font-semibold capitalize">{{ vehicle.fuelType }}</p>
-                  </div>
+                  </div> -->
                   <div class="form-group flex items-center mb-6">
                     <label for="fullname" class="form-label inline-block mr-4 text-gray-900"
                       >Color :
