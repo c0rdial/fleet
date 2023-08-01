@@ -37,10 +37,10 @@ export default defineComponent({
   setup(props) {
     const route = useRoute()
     const router = useRouter()
-    const userLocal = localStorage.getItem('vuex');
-    const user = JSON.parse(userLocal);
+    // const userLocal = localStorage.getItem('vuex');
+    // const user = JSON.parse(userLocal);
 
-    console.log(user.auth.auth.fo);
+    // console.log(user.auth.auth.fo);
 
     const navigations = [
       {
