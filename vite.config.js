@@ -22,7 +22,7 @@ export default defineConfig({
     open: true,
     proxy: {
       "/api": {
-        target: "https://fleet-fyp.up.railway.app",
+        target: "fleet-fyp.vercel.app",
         changeOrigin: true,
         pathRewrite: {
           "^/api": "",
