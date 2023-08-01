@@ -11,7 +11,7 @@ const debug = process.env.NODE_ENV !== "production";
 
 const vuexLocal = new VuexPersistence({
   modules: ["auth"],
-  key: process.env.VITE_APP_SHORT_NAME,
+  key: 'vuex',
 });
 
 const modules = {
