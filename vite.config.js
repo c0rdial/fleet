@@ -17,17 +17,17 @@ export default defineConfig({
       assets: resolve("src/assets"),
     }
   },
-  server: {
-    port: 8001,
-    open: true,
-    proxy: {
-      "/api": {
-        target: "https://fleet-fyp.vercel.app",
-        changeOrigin: true,
-        pathRewrite: {
-          "^/api": "",
-        },
-      },
-    },
-  },
+  // server: {
+  //   port: 8001,
+  //   open: true,
+  //   proxy: {
+  //     "/api": {
+  //       target: "https://fleet-fyp.vercel.app",
+  //       changeOrigin: true,
+  //       pathRewrite: {
+  //         "^/api": "",
+  //       },
+  //     },
+  //   },
+  // },
 })
