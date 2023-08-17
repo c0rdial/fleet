@@ -22,7 +22,7 @@ export default defineConfig({
     open: true,
     proxy: {
       "/api": {
-        target: "https://fleet-3bb4jq856-c0rdial.vercel.app/api/v1/",
+        target: "https://fleet-fyp.vercel.app/api/v1/",
         changeOrigin: true,
         pathRewrite: {
           "^/api": "",

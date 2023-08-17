@@ -13,7 +13,7 @@
         @submit.prevent="handleLogin"
       >
         <div>
-          <label for="email" class="sr-only">Email</label>
+          <label for="email" class="sr-only">Email</label>‹
 
           <div class="relative">
             <input
